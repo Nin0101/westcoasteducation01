@@ -14,6 +14,8 @@ class Program
 
         EducationLeader leader = new EducationLeader("Bo", "Karlsson", "0709876543", "19750505", "Ledargatan 3", "41102", "Göteborg", "Mobilutveckling", new DateTime(2020, 1, 15));
 
+        Administrator admin = new Administrator("Cia", "Nilsson", "0705554433", "19900909", "Adminvägen 4", "41103", "Göteborg", "IT-drift", new DateTime(2018, 3, 1));
+
         teacher.AddCourse(course);
         teacher.AddCourse(course);
 
@@ -22,6 +24,8 @@ class Program
         Console.WriteLine(course);
 
         Console.WriteLine(leader);
+
+        Console.WriteLine(admin);
     }
 
     
