@@ -4,17 +4,17 @@ class Program
 {
     static void Main()
     {
-        Student student = new Student("Nin", "King", "07323111", "20020130031", "Storgatan 1", "32243", "Göteborg");
+        Student student = new("Lars", "Lennart", "0734324351", "200204321423", "Storgatan 1", "32243", "Göteborg");
 
         Console.WriteLine(student);
 
-        Teacher teacher = new Teacher ("Sova", "Louse", "079132312", "19181811", "Strömgatan 1", "34232", "Trelleborg", "Webbutveckling");
+        Teacher teacher = new("Sova", "Louse", "0791323122", "199703157161", "Strömgatan 3", "34232", "Göteborg", "Webbutveckling");
 
-        Course course = new Course("C001", "C# Programmering", 5, new DateTime(2026, 10, 1), new DateTime(2026, 11, 5), CourseType.Classroom);
+        Course course = new("C001", "C# Programmering", 5, new DateTime(2026, 10, 1), new DateTime(2026, 11, 5), CourseType.Classroom);
 
-        EducationLeader leader = new EducationLeader("Bo", "Karlsson", "0709876543", "19750505", "Ledargatan 3", "41102", "Göteborg", "Mobilutveckling", new DateTime(2020, 1, 15));
+        EducationLeader leader = new("Bo", "Karlsson", "0709876543", "197305058971", "Västragatan 3", "41102", "Göteborg", "Mobilutveckling", new DateTime(2020, 1, 15));
 
-        Administrator admin = new Administrator("Cia", "Nilsson", "0705554433", "19900909", "Adminvägen 4", "41103", "Göteborg", "IT-drift", new DateTime(2018, 3, 1));
+        Administrator admin = new("Andrea", "Meia", "0705554433", "199009094323", "Amiralsgatan 4", "41103", "Göteborg", "IT-drift", new DateTime(2018, 3, 1));
 
         teacher.AddCourse(course);
         teacher.AddCourse(course);
@@ -22,6 +22,8 @@ class Program
         Console.WriteLine(course.AddStudent(student));
 
         Console.WriteLine(course.AddStudent(student));
+
+        course.ListStudents();
 
         Console.WriteLine(teacher);
     

@@ -39,4 +39,18 @@ public Course( string courseNumber, string title, int length, DateTime startDate
     {
         return $"{CourseNumber}: {Title}: {Length} veckor, {Type}"; 
     }
+
+    public void ListStudents()
+    {
+        if (Students.Count == 0)
+        {
+            Console.WriteLine("Inga studenter anmälda");
+            return;
+        }
+
+        foreach (Student s in Students)
+        {
+            Console.WriteLine(s);
+        }
+    }
 }
