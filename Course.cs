@@ -8,6 +8,8 @@ public int Length { get; set; }
 public DateTime StartDate { get; set; }
 public DateTime EndDate { get; set; }
 public CourseType Type { get; set; }
+public Teacher? ResponsibleTeacher { get; set; }
+public List <Student> Students { get; } = [];
 
 public Course( string courseNumber, string title, int length, DateTime startDate, DateTime endDate, CourseType type)
 
@@ -18,6 +20,19 @@ public Course( string courseNumber, string title, int length, DateTime startDate
         StartDate = startDate;
         EndDate = endDate;
         Type = type; 
+    }
+
+    public bool AddStudent(Student student)
+    {
+        foreach (Student s in Students)
+        {
+            if (s.PersonalNumber == student.PersonalNumber)
+            {
+                return false;
+            }
+        }
+        Students.Add(student);
+        return true;
     }
 
     public override string ToString()

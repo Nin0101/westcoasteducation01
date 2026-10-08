@@ -19,6 +19,10 @@ class Program
         teacher.AddCourse(course);
         teacher.AddCourse(course);
 
+        Console.WriteLine(course.AddStudent(student));
+
+        Console.WriteLine(course.AddStudent(student));
+
         Console.WriteLine(teacher);
     
         Console.WriteLine(course);
