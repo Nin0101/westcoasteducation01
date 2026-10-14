@@ -56,7 +56,7 @@ public bool AddCourse (Course course)
     {
         if (Students.Count == 0)
         {
-            Console.WriteLine("Inga stundenter registrerade!");
+            Console.WriteLine("No students registered!");
             return;
         }
 

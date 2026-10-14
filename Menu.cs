@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
-namespace WestCoastEducation;
+﻿namespace WestCoastEducation;
 
 public class Menu
 {
@@ -20,7 +17,7 @@ public class Menu
         {
             Console.WriteLine();
             Console.WriteLine("============================");
-            Console.WriteLine("WestCoast Educaton");
+            Console.WriteLine("    WestCoast Education");
             Console.WriteLine("============================");
             Console.WriteLine("1. Add course");
             Console.WriteLine("2. Add teacher ");
@@ -30,7 +27,7 @@ public class Menu
             Console.WriteLine("6. List courses");
             Console.WriteLine("7. List students");
             Console.WriteLine("0. Exit");
-            Console.Write("Coice: ");
+            Console.Write("Choice: ");
 
             string? choice = Console.ReadLine();
 
