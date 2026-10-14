@@ -27,7 +27,7 @@ public bool AddCourse (Course course)
     {
         if ( Courses.Count == 0)
         {
-            Console.WriteLine("Inga kurser registrerade!");
+            Console.WriteLine("No courses registered!");
             return;
         }
 

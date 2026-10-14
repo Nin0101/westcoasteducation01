@@ -37,14 +37,14 @@ public Course( string courseNumber, string title, int length, DateTime startDate
 
     public override string ToString()
     {
-        return $"{CourseNumber}: {Title}: {Length} veckor, {Type}"; 
+        return $"{CourseNumber}: {Title}: {Length} weeks, {Type}"; 
     }
 
     public void ListStudents()
     {
         if (Students.Count == 0)
         {
-            Console.WriteLine("Inga studenter anmälda");
+            Console.WriteLine("No Students registered");
             return;
         }
 
