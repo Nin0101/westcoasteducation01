@@ -16,21 +16,26 @@ class Program
 
         Administrator admin = new("Andrea", "Meia", "0705554433", "199009094323", "Amiralsgatan 4", "41103", "Göteborg", "IT-drift", new DateTime(2018, 3, 1));
 
+        School school = new();
+
+
+
+
         teacher.AddCourse(course);
         teacher.AddCourse(course);
 
         Console.WriteLine(course.AddStudent(student));
-
         Console.WriteLine(course.AddStudent(student));
+        
+        Console.WriteLine(school.AddCourse(course));
+        Console.WriteLine(school.AddCourse(course));
 
         course.ListStudents();
+        school.ListCourses();
 
         Console.WriteLine(teacher);
-    
         Console.WriteLine(course);
-
         Console.WriteLine(leader);
-
         Console.WriteLine(admin);
     }
 
